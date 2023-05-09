@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/defualt.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>ITIS3135 | Neil Huntley's Normal Human | First Javascript</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>First Javascript</h2>
+
+        
+        <button onclick="scriptTest()">Try it out!</button>
+        
+        <h3 id ="demo">Today is:</h3>
+
+        <script>
+            date()
+        </script>
+
+        <input type="text" id = "inputname" placeholder="Ex:John Doe">
+        <input type="text" id = "inputfeeling" placeholder = "Ex: good">
+        <button onclick="info()">Submit</button>
+        <p id = "outputsurvey"></p>
+
+        <hr>
+        <button onclick="weather()">How's the weather?</button>
+        <p id = "theweather"></p>
+
+        <hr>
+        <input type="number" id = "numone" placeholder="Ex:1">
+        <input type="number" id = "numtwo" placeholder = "Ex:2">
+        <button onclick="addTwoNums()">Add the numbers</button>
+        <br>
+        <br>
+        <p>Sum: <input id = "sum"></p>
+        
+        
+
+        <hr>
+
+        <p>Enter hours worked: <input type="number" id = "hours" placeholder="Ex:50"></p>
+        <p>Enter hourly wage: <input type="number" id = "pay" placeholder = "Ex:15"></p>
+        <p>Enter years with the company: <input type="number" id = "years" placeholder = "Ex:2"></p>
+        <button onclick="calcSalary()">Calculate pay</button>
+        <br>
+        <br>
+        <p>This weeks pay: <input id = "salary"></p>
+
+        <br>
+        <hr>
+
+        <p>Enter your gas cost: <input type="number" id = "cost" placeholder="Ex:50"></p>
+        <p>Enter how much gas you used: <input type="number" id = "amount" placeholder = "Ex:15"></p>
+        <p>Enter miles driven: <input type="number" id = "miles" placeholder = "Ex:2"></p>
+        <button onclick="calcGas()">Calculate gas</button>
+        <br>
+        <br>
+        <p>Miles per gallon: <input id = "mpg"></p>
+        <p id = "price"></p>
+
+        
+        
+
+    </main>
+    <div id="footer"></div>
+    <script src="scripts/defaultscripts.js"></script>
+    <script>
+        // Load the header and footer files into their containers
+        $('#header').load('basic_header.html');
+        $('#footer').load('basic_footer.html');
+    </script>
+
+
+</body>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/defualt.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <title>ITIS3135 | Neil Huntley's Normal Human | Slideshow</title>
+    <script src="scripts/slideshow.js"></script>
+    <!-- <script src="scripts/defaultscripts.js"></script> -->
+
+
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>Slideshow</h2>
+
+        <div>
+            <!-- <img id="slideshow-header" class="centered" src="https://thrivethemes.com/wp-content/uploads/2018/05/photo-jpeg-example.jpg" alt=""> -->
+        </div>
+
+        <ul class="container" id="image_storage">
+            <li><a href="images/fox1.jpg"></a><img class="swap" src="images/fox1.jpg" title="Snowy Fox" alt=""></li>
+            <li><a href="images/fox2.jpg"></a><img class="swap" src="images/fox2.jpg" title="Fox in Snow" alt=""></li>
+            <li><a href="images/fox3.jpg"></a><img class="swap" src="images/fox3.jpg" title="Staring Fox" alt=""></li>
+            <li><a href="images/fox4.jpg"></a><img class="swap" src="images/fox4.jpg" title="Wandering Fox" alt=""></li>
+            <li><a href="images/fox5.jpg"></a><img class="swap" src="images/fox5.jpg" title="Fox Gazing" alt=""></li>
+            <li><a href="images/fox6.jpg"></a><img class="swap" src="images/fox6.jpg" title="Fox Art" alt=""></li>
+
+        </ul>
+
+        <figure class="centered">
+            <img id="slideshow-header" src="images/fox1.jpg"  class="swap" alt="">
+            <figcaption id="caption">Snowy Fox</figcaption>
+        </figure>
+
+
+    </main>
+    <div id="footer"></div>
+
+
+
+    <script src="scripts/slideshow.js"></script>
+
+    <script>
+        // Load the header and footer files into their containers
+        $('#header').load('basic_header.html');
+        $('#footer').load('basic_footer.html');
+    </script>
+
+</body>
+
+</html>

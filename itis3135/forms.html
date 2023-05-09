@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS3135 | Neil Huntley's Normal Human | Forms</title>
+    <link href="styles/defualt.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>Huntley Web and Co user survey&#169;</h2>
+
+
+        <!-- <form></form> -->
+        <form>
+            <fieldset>
+                <legend>Basic information:</legend>
+                <label for="fname">(Required)First Name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Ex:John" required><br>
+                <label for="lname">(Required)Last Name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Ex: Doe" required><br>
+                <label for="phonenum">Phone number:</label><br>
+                <input type="text" id="phonenum" name="phonenum" placeholder="Ex: 123-456-7890"><br>
+                <label for="email">(Required)Email address:</label><br>
+                <input type="text" id="email" name="email" size="32" placeholder="Ex: jondoe@gmail.com" required><br>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>What coding languages do you know?</legend>
+                <input type="checkbox" id="programming1" name="programming1" value="Java">
+                <label for="programming1">Java</label>
+                <input type="checkbox" id="programming2" name="programming2" value="Python">
+                <label for="programming2">Python</label>
+                <input type="checkbox" id="programming3" name="programming3" value="HTML">
+                <label for="programming3">HTML</label>
+                <input type="checkbox" id="programming4" name="programming4" value="C++">
+                <label for="programming4">C++</label>
+                <input type="checkbox" id="programming5" name="programming5" value="Javascript">
+                <label for="programming5">Javascript</label>
+                <input type="checkbox" id="programming6" name="programming6" value="C#">
+                <label for="programming6">C#</label>
+                <br>
+                <label for="otherprogram">Other:</label>
+                <input type="text" id="otherprogram" name="otherprogram" placeholder="Ex: Assembly"><br>
+
+
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>What operating system do you use?</legend>
+                <input type="radio" id="Windows" name="operating system" required>
+                <label for="Windows">Windows</label><br>
+                <input type="radio" id="Linux" name="operating system">
+                <label for="Linux">Linux</label><br>
+                <input type="radio" id="Mac" name="operating system">
+                <label for="Mac">Mac</label><br>
+            </fieldset>
+
+            <fieldset>
+                <label for="ComputerPower">How powerful is your computer?</label>
+                <select name="ComputerPower" id="ComputerPower" required>
+                    <option value="" selected disabled hidden>Select an option</option>
+                    <option value="Raspberry Pi">Raspberry Pi</option>
+                    <option value="Potato">Potato</option>
+                    <option value="Average">Average</option>
+                    <option value="Gaming Computer">Gaming Computer</option>
+                    <option value="Nuclear Submarine">Nuclear Submarine</option>
+                    <option value="Nasa supercomputer">Nasa supercomputer</option>
+                </select>
+
+            </fieldset>
+
+
+            <input type="reset" value="Reset"><br>
+            <input type="submit" value="Submit"><br>
+
+        </form>
+
+    </main>
+    <div id="footer"></div>
+    <script>
+        // Load the header and footer files into their containers
+        $('#header').load('basic_header.html');
+        $('#footer').load('basic_footer.html');
+    </script>
+
+
+</body>
+</html>

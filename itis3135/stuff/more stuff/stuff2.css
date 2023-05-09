@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'ComicPapyrus';
+    src: url(ComicPapyrus.ttf);
+
+}
+p{
+    font-family:ComicPapyrus;
+    color: pink;
+    background-color: rgb(149, 255, 0);
+    font-size: 100px;
+    border-style: thick dotted aquamarine;
+    
+    border-width: 100%;
+    
+}
+h5{
+    padding-left: 50%;
+    padding-top: 20px;
+    border-bottom: 300px;
+    border-color: blueviolet;
+    border-width: 30%;
+}
+h1{
+    padding-right: 30%;
+    padding-top: 1000px;
+    border-width: thick;
+    border-top: 500px;
+    border-color: aqua;
+    background-color: brown;
+    
+}
