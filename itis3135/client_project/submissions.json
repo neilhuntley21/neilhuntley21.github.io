@@ -1,0 +1,12 @@
+{
+    "submissions": [
+      {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "grade":"9",
+        "parent":"Jane Doe",
+        "reason": "I really like robotics!",
+        "tshirt": "XL"
+      }
+    ]
+  }

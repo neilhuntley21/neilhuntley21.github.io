@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/client_project.css" rel="stylesheet">
+    <title>Thor with 4829 | About</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+
+    <!-- <script src="scripts/client_scripts.js"></script> -->
+</head>
+
+<body>
+
+
+    <main>
+        <div id="header"></div>
+        <div class="container">
+            <figure>
+                <!-- Your figure content here -->
+                <img src="images/loopyrobot.png" alt="Ada Lovelace">
+                <figcaption>Our ultra competitive robot from last year!</figcaption>
+            </figure>
+            <div>
+                <!-- Your div content here -->
+                <p>First robotics competition (FRC) is an international high school robotics competition that is part of
+                    FIRST (For Inspiration and Recognition of Science and Technology), a nonprofit organization founded
+                    in 1989 by inventor Dean Kamen. FRC combines the excitement of sport with the rigors of science and
+                    technology, challenging teams of high school students, coaches, and mentors to build industrial-size
+                    robots to play a difficult field game in alliance with other teams. FRC also aims to inspire young
+                    people to be leaders and innovators in STEM fields and to address global challenges related to
+                    energy and sustainability.</p>
+                <p>
+                    Each year, FRC teams work during a six-week period to design, program, and build their robots
+                    starting with a standard kit of parts and common set of rules. They also have to fundraise to meet
+                    their goals, design a team “brand,” and promote STEM in their local community. FRC teams compete for
+                    awards that recognize their achievements in various aspects of the competition, such as engineering
+                    design, innovation, entrepreneurship, safety, and gracious professionalism.
+                </p>
+                <p>
+                    THOR is an acronym for Thundering Herd of Robots, and it is a series of off-season events for
+                    FIRST Robotics Competition teams in North Carolina. THOR was started in 2013 by four FRC teams: FRC
+                    587 - The Hedgehogs, FRC 2059 - Hitchhikers, FRC 2640 - HotBotz, and FRC 3196 - Team SPORK. Since
+                    then, THOR has grown and expanded to include more teams and locations across the state. THOR gives
+                    FRC teams an opportunity to play another round of the current game challenge, RAPID REACT, with
+                    their robots and compete with other teams in a fun and friendly environment. THOR also helps teams
+                    recruit new members, mentors, and sponsors, as well as network with other teams and volunteers in
+                    the STEM community. THOR is organized and hosted by FIRST North Carolina and several FRC teams who
+                    volunteer their time and resources to make the events possible.
+                </p>
+            </div>
+        </div>
+        <div></div>
+        
+            
+            
+            <form id="join-form" class="form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" required><br><br>
+                <label for="grade">Grade:</label><br>
+                <input type="text" id="grade" name="grade"><br><br>
+                <label for="parent">Parent/Guardian Name:</label><br>
+                <input type="text" id="parent" name="parent" required><br><br>
+                <label for="reason">Why do you want to be on the team?</label><br>
+                <textarea id="reason" name="reason"></textarea><br><br>
+                <label for="tshirt">T-Shirt Size:</label><br>
+                <select id="tshirt" name="tshirt">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit">
+                <button id="prefill">Give me an example form submission</button>
+            </form>
+            <div id="result"></div>
+
+            
+            <script>
+                
+            </script>
+            <div id="footer"></div>
+
+        </main>
+
+
+        <script src="scripts/client_scripts.js"></script>
+        <script>
+            // Load the header and footer files into their containers
+            $('#header').load('basic_header.html');
+            $('#footer').load('basic_footer.html');
+        </script>
+</body>
+
+</html>
