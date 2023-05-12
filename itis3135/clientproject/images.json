@@ -1,0 +1,29 @@
+{
+    "images": [
+        {
+            "url": "images/2019climb.png",
+            "topCaption": "Click image to see next image",
+            "bottomCaption": "Our robot climing onto a large platform in 2019!"
+        },
+        {
+            "url": "images/tommyrobot.png",
+            "topCaption": "Click image to see next image",
+            "bottomCaption": "Our robot from 2017 prepped and ready to go!"
+        },
+        {
+            "url": "images/roomba.png",
+            "topCaption": "Click image to see next image",
+            "bottomCaption": "Our robot built for the 2020 season doing field practice!"
+        },
+        {
+            "url": "images/loopyclose.png",
+            "topCaption": "Click image to see next image",
+            "bottomCaption": "A machine cut piece of our 2022 robot!"
+        },
+        {
+            "url": "images/loopyintake.png",
+            "topCaption": "Click image to see next image",
+            "bottomCaption": "The intake mechanism on our 2022 robot!"
+        }
+    ]
+}

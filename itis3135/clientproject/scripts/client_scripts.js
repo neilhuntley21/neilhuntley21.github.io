@@ -33,7 +33,42 @@ $(document).ready(function () {
         });
     });
 });
-
+$.ajax({
+    url: 'images.json',
+    dataType: 'json',
+    success: function(data) {
+      var currentIndex = 0;
+      var figure = $('<figure>');
+      var topCaption = $('<figcaption>');
+      var img = $('<img src="' + data.images[currentIndex].url + '">');
+      var bottomCaption = $('<figcaption>');
+      figure.append(topCaption);
+      figure.append(img);
+      figure.append(bottomCaption);
+      updateCaptions();
+  
+      img.on('click', function() {
+        currentIndex = (currentIndex + 1) % data.images.length;
+        var nextImage = data.images[currentIndex];
+        $(this).fadeOut(500, function() {
+          $(this).attr('src', nextImage.url);
+          updateCaptions();
+          $(this).fadeIn(500);
+        });
+      });
+  
+      $('#gallery').append(figure);
+  
+      function updateCaptions() {
+        var currentImage = data.images[currentIndex];
+        topCaption.text(currentImage.topCaption);
+        bottomCaption.text(currentImage.bottomCaption);
+      }
+    }
+  });
+  
+  
+  
 $(document).ready(function () {
     $( "#founding-date" ).datepicker();
     $("#preload-button").click(function() {
@@ -45,6 +80,7 @@ $(document).ready(function () {
             $("#additional-questions").val(data.additionalQuestions);
         });
     });
+
     
     // $("#preload-button").click(function() {
         

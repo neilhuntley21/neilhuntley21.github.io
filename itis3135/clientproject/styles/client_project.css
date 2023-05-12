@@ -38,7 +38,8 @@ header {
 div h2 {
     color: #f2f2f2;
 }
-h2{
+
+h2 {
     margin-left: 20px;
 }
 
@@ -98,6 +99,10 @@ header nav a {
     padding: 20px;
     margin: -20px;
 
+}
+h5 a{
+    text-decoration: none;
+    color:black;
 }
 
 .footer-top {
@@ -164,6 +169,7 @@ figure {
     }
 }
 
+
 h1 {
     text-align: center;
 }
@@ -210,7 +216,8 @@ input[type="submit"]:hover {
     margin-top: 20px;
     text-align: center;
 }
-.fill{
+
+.fill {
     display: block;
     width: 100%;
     margin-top: 20px;
@@ -221,6 +228,7 @@ input[type="submit"]:hover {
     border-radius: 5px;
     cursor: pointer
 }
+
 /* #prefill {
     
 } */
@@ -250,11 +258,11 @@ div p {
 }
 
 #event-details {
-    width: 65%;
+    width: 40%;
     max-width: 800px;
-    background-color: #7f7979;
+    /* background-color: #7f7979; */
     margin: auto;
-    padding:30px;
+    padding: 30px;
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -290,33 +298,83 @@ div p {
     background-color: #f1f1f1;
     border-radius: 10px;
     padding: 20px;
-  }
-  #registration-form label {
+}
+
+#registration-form label {
     display: block;
     margin-bottom: 10px;
-  }
-  #registration-form input[type="text"],
-  #registration-form input[type="number"],
-  #registration-form textarea {
+}
+
+#registration-form input[type="text"],
+#registration-form input[type="number"],
+#registration-form textarea {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
     margin-bottom: 20px;
-  }
-  #registration-form input[type="submit"],
-  #registration-form input[type="button"] {
+}
+#registration-form input[type="submit"]{
     background-color: #4CAF50;
+}
+#registration-form input[type="submit"],
+#registration-form input[type="button"] {
+    
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  #registration-form input[type="submit"]:hover,
-  #registration-form input[type="button"]:hover {
-    background-color: #45a049;
-  }
+}
 
-  #subbtn{
+#registration-form input[type="submit"]:hover,
+#registration-form input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+#subbtn {
     width: 100%;
-  }
+}
+
+.fade {
+    animation: fade 5s linear infinite;
+}
+
+@keyframes fade {
+    0% {
+        background-color: #7e7b7b;
+    }
+
+    50% {
+        background-color: #a5a5b0;
+    }
+
+    100% {
+        background-color: #7e7b7b;
+    }
+}
+.box{
+    width: 70%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding:10px;
+    border-radius: 10px;
+}
+#gallery{
+    /* width: 50%; */
+    max-width: 800px;
+    margin: 0 auto;
+    height: 450px;
+    object-fit: cover;
+    font-size:20px;
+}
+.myform{
+    width: fit-content;
+    max-width: 500px;
+    padding:10px;
+    margin: 0 auto;
+    background-color: lightgray;
+    border-radius: 50px;
+}
+/* #gallery :first-of-type figcaption{
+    font-size: 15px;
+} */
